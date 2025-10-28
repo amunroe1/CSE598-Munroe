@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<xs:xschema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Hotels">
+    <xs:complexType>
+      <xs:element name="Hotel">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Name" type="xs:string"/>
+            
+      

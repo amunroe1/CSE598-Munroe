@@ -1,1 +1,115 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+<Hotel xmlns="http://www.hotel.com/hotel-schema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.hotel.com/hotel-schema https://raw.githubusercontent.com/amunroe1/CSE598-Munroe/main/Assignment_4/Hotels.xsd">
+	<Hotel Rating="4.2">
+		<Name>Westin</Name>
+		<Phone>480-968-8885</Phone>
+		<Phone>800-937-8461</Phone>
+		<Address>
+			<Number>11</Number>
+			<Street>E. 7th St</Street>
+			<City>Tempe</City>
+			<State>Arizona</State>
+			<Zip>85281</Zip>
+		</Address>
+	</Hotel>
+	<Hotel>
+		<Name>Omni Tempe Hotel</Name>
+		<Address NearestAirport="Sky Harbor">
+			<Number>7</Number>
+			<Street>E. University Dr.</Street>
+			<City>Tempe</City>
+			<State>Arizona</State>
+			<Zip>85281</Zip>
+		</Address>
+	</Hotel>
+	<Hotel>
+		<Name>Comfort Inn</Name>
+		<Phone>(480) 858-9898</Phone>
+		<Address NearestAirport="Sky Harbor">
+			<Number>808</Number>
+			<Street>N. Scottsdale Rd.</Street>
+			<City>Tempe</City>
+			<State>Arizona</State>
+			<Zip>85281</Zip>
+		</Address>
+	</Hotel>
+	<Hotel Rating="4.0">
+		<Name>Best Western</Name>
+		<Phone>888-389-4121</Phone>
+		<Address NearestAirport="Bradley International">
+			<Number>185</Number>
+			<Street>Brainard Rd.</Street>
+			<City>Hartford</City>
+			<State>CT</State>
+			<Zip>06114</Zip>
+	</Hotel>
+	<Hotel Rating="4.0">
+		<Name>Mariott</Name>
+		<Phone>800-716-8490</Phone>
+		<Address NearestAirport="Bradley International">
+			<Number>20006103</Number>
+			<Street>Columbus Blvd.</Street>
+			<City>Hartford</City>
+			<State>CT</State>
+			<Zip>06103</Zip>
+		</Address>
+	</Hotel>
+	<Hotel Rating="4.0">
+		<Name>Hampton Inn</Name>
+		<Phone>800-805-5223</Phone>
+		<Address NearestAirport="Bradley International">
+			<Number>351</Number>
+			<Street>Pitkin St.</Street>
+			<City>East Hartford</City>
+			<State>CT</State>
+			<Zip>06108</Zip>
+		</Address>
+	</Hotel>
+	<Hotel Rating="2.0">
+		<Name>Economy Inn</Name>
+		<Phone>888-965-1860</Phone>
+		<Address NearestAirport="Bradley International">
+			<Number>490</Number>
+			<Street>Main St.</Street>
+			<City>East Hartford</City>
+			<State>CT</State>
+			<Zip>06108</Zip>
+		</Address>
+	</Hotel>
+	<Hotel Rating="4.0">
+		<Name>Hyatt Place</Name>
+		<Phone>800-805-5223</Phone>
+		<Address NearestAirport="Boston Logan">
+			<Number>295</Number>
+			<Street>Northern Ave.</Street>
+			<City>Boston</City>
+			<State>MA</State>
+			<Zip>02210</Zip>
+		</Address>
+	</Hotel>
+	<Hotel Rating="4.0">
+		<Name>Seaport Hotel</Name>
+		<Phone>888-788-5576</Phone>
+		<Address NearestAirport="Boston Logan">
+			<Number>1</Number>
+			<Street>Seaport Ln.</Street>
+			<City>Boston</City>
+			<State>MA</State>
+			<Zip>02210</Zip>
+		</Address>
+	</Hotel>
+	<Hotel Rating="4.0">
+		<Name>Residence Inn</Name>
+		<Name>By Mariott</Name>
+		<Phone>888-965-8297</Phone>
+		<Address NearestAirport="Boston Logan">
+			<Number>370</Number>
+			<Street>Congress St.</Street>
+			<City>Boston</City>
+			<State>MA</State>
+			<Zip>02210</Zip>
+		</Address>
+	</Hotel>
+</Hotel>

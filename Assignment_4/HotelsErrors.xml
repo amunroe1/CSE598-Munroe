@@ -1,11 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Hotel xmlns="http://www.hotel.com/hotel-schema"
+<!-- Error 1-->
+<Hotels xmlns="http://www.hotel.com/hotel-schema"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.hotel.com/hotel-schema https://raw.githubusercontent.com/amunroe1/CSE598-Munroe/main/Assignment_4/Hotels.xsd">
 	<Hotel Rating="4.2">
 		<Name>Westin</Name>
+		<Name></Name>
 		<Phone>480-968-8885</Phone>
 		<Phone>800-937-8461</Phone>
+		<!-- Error 2: No NearestAirport Attribute -->
 		<Address>
 			<Number>11</Number>
 			<Street>E. 7th St</Street>
@@ -17,6 +20,7 @@
 
 	<Hotel>
 		<Name>Omni Tempe Hotel</Name>
+		<!-- Error 3: No Phone number -->
 		<Address NearestAirport="Sky Harbor">
 			<Number>7</Number>
 			<Street>E. University Dr.</Street>
@@ -46,6 +50,7 @@
 			<City>Hartford</City>
 			<State>CT</State>
 			<Zip>06114</Zip>
+			<!-- Error 4: No Address end tag -->
 	</Hotel>
 	<Hotel Rating="4.0">
 		<Name>Mariott</Name>
@@ -103,6 +108,7 @@
 		</Address>
 	</Hotel>
 	<Hotel Rating="4.0">
+		<!-- Error 5: Two name elements -->
 		<Name>Residence Inn</Name>
 		<Name>By Mariott</Name>
 		<Phone>888-965-8297</Phone>
@@ -114,4 +120,4 @@
 			<Zip>02210</Zip>
 		</Address>
 	</Hotel>
-</Hotels>
+</Hotel>

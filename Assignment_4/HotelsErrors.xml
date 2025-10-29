@@ -14,6 +14,7 @@
 			<Zip>85281</Zip>
 		</Address>
 	</Hotel>
+
 	<Hotel>
 		<Name>Omni Tempe Hotel</Name>
 		<Address NearestAirport="Sky Harbor">
@@ -24,6 +25,7 @@
 			<Zip>85281</Zip>
 		</Address>
 	</Hotel>
+
 	<Hotel>
 		<Name>Comfort Inn</Name>
 		<Phone>(480) 858-9898</Phone>
@@ -112,4 +114,4 @@
 			<Zip>02210</Zip>
 		</Address>
 	</Hotel>
-</Hotel>
+</Hotels>

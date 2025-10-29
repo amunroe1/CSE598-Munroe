@@ -1,8 +1,8 @@
-﻿using System;
-using System.Xml.Schema;
+﻿using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
+using System.Net;
 using System.Xml;
-using Newtonsoft.Json;
-using System.IO;
 
 namespace ConsoleApp1
 {
@@ -19,10 +19,12 @@ namespace ConsoleApp1
             string result = Verification(xmlURL, xsdURL);
             Console.WriteLine(result);
 
-            result = Verification(xmlErrorURL, xsdURL);
+
+
+            result = Xml2Json(xmlURL);
             Console.WriteLine(result);
 
-            result = Xml2Json("Hotels.xml");
+            result = Verification(xmlErrorURL, xsdURL);
             Console.WriteLine(result);
         }
 
@@ -30,32 +32,49 @@ namespace ConsoleApp1
         public static string Verification(string xmlUrl, string xsdUrl)
         {
             //return "No Error" if XML is valid. Otherwise, return the desired exception message.
+            List<string> validationErrors = new List<string>();
             try
             {
                 // Load the XML document
-                XmlReaderSettings settings = new XmlReaderSettings();
-                settings.ValidationType = ValidationType.Schema;
+                XmlReaderSettings settings = new XmlReaderSettings
+                {
+                    ValidationType = ValidationType.Schema
+                };
                 settings.Schemas.Add(null, xsdUrl);
+
                 settings.ValidationEventHandler += (sender, args) =>
                 {
-                    throw new XmlSchemaValidationException(args.Message);
+                    validationErrors.Add($"{args.Message} Line {args.Exception.LineNumber}, position {args.Exception.LinePosition}.");
                 };
 
-                using (XmlReader reader = XmlReader.Create(xmlUrl, settings))
+                try
                 {
-                    while (reader.Read()) { }
+                    using (XmlReader reader = XmlReader.Create(xmlUrl, settings))
+                    {
+                        while (reader.Read()) { }
+                    }
+            
+                }
+                catch (XmlException ex)
+                {
+                    validationErrors.Add(ex.Message); ;
                 }
 
-                return "No Error";
-            }
-            catch (XmlSchemaValidationException ex)
-            {
-                return $"Validation Error: {ex.Message}";
+
+                if (validationErrors.Count > 0)
+                {
+                    return "Validation Errors:\n" + string.Join("\n", validationErrors); ;
+                }
+                else
+                {
+                    return "No Error";
+                }
             }
             catch (Exception ex)
             {
-                return $"Error: {ex.Message}";
+                return $"Unexpected error: {ex.Message}";
             }
+
         }
 
         // Q2.2
@@ -65,11 +84,10 @@ namespace ConsoleApp1
             try
             {
                 string xmlContent;
-                using (var client = new System.Net.WebClient())
+                using (WebClient client = new WebClient())
                 {
                     xmlContent = client.DownloadString(xmlUrl);
                 }
-
                 XmlDocument doc = new XmlDocument();
                 doc.LoadXml(xmlContent);
                 string jsonText = JsonConvert.SerializeXmlNode(doc);
@@ -77,7 +95,7 @@ namespace ConsoleApp1
             }
             catch (Exception ex)
             {
-                return $"Error: {ex.Message}";
+                return $"Xml2Json Error: {ex.Message}";
             }
         }
     }

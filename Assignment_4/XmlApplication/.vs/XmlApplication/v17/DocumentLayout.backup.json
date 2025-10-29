@@ -3,8 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\Andrew\\OneDrive\\Desktop\\School\\Distributed Software\\CSE598-Munroe\\Assignment_4\\XmlApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F67F2397-3056-461D-9E77-B17D74A272A1}|XmlApplication\\XmlApplication.csproj|C:\\Users\\Andrew\\OneDrive\\Desktop\\School\\Distributed Software\\CSE598-Munroe\\Assignment_4\\XmlApplication\\xmlapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F67F2397-3056-461D-9E77-B17D74A272A1}|XmlApplication\\XmlApplication.csproj|solutionrelative:xmlapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AF17493B-BFEB-4BCD-8F48-2C5BBA4711F8}|..\\ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\andrew\\onedrive\\desktop\\school\\distributed software\\cse598-munroe\\assignment_4\\consoleapp1\\submission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|C:\\Users\\Andrew\\OneDrive\\Desktop\\School\\Distributed Software\\CSE598-Munroe\\Assignment_4\\Hotels.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
@@ -20,7 +19,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -32,6 +31,19 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "submission.cs",
+              "DocumentMoniker": "C:\\Users\\Andrew\\OneDrive\\Desktop\\School\\Distributed Software\\CSE598-Munroe\\Assignment_4\\ConsoleApp1\\submission.cs",
+              "RelativeDocumentMoniker": "..\\ConsoleApp1\\submission.cs",
+              "ToolTip": "C:\\Users\\Andrew\\OneDrive\\Desktop\\School\\Distributed Software\\CSE598-Munroe\\Assignment_4\\ConsoleApp1\\submission.cs",
+              "RelativeToolTip": "..\\ConsoleApp1\\submission.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAgwC4AAACCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T22:28:19.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Hotels.xml",
               "DocumentMoniker": "C:\\Users\\Andrew\\OneDrive\\Desktop\\School\\Distributed Software\\CSE598-Munroe\\Assignment_4\\Hotels.xml",
@@ -40,8 +52,7 @@
               "RelativeToolTip": "..\\Hotels.xml",
               "ViewState": "AgIAAEsAAAAAAAAAAADwv3QAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-10-29T20:37:15.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T20:37:15.057Z"
             },
             {
               "$type": "Document",
@@ -53,21 +64,7 @@
               "RelativeToolTip": "..\\Hotels.xsd",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
-              "WhenOpened": "2025-10-29T18:12:20.837Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Andrew\\OneDrive\\Desktop\\School\\Distributed Software\\CSE598-Munroe\\Assignment_4\\XmlApplication\\XmlApplication\\Program.cs",
-              "RelativeDocumentMoniker": "XmlApplication\\Program.cs",
-              "ToolTip": "C:\\Users\\Andrew\\OneDrive\\Desktop\\School\\Distributed Software\\CSE598-Munroe\\Assignment_4\\XmlApplication\\XmlApplication\\Program.cs*",
-              "RelativeToolTip": "XmlApplication\\Program.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T13:50:56.536Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T18:12:20.837Z"
             }
           ]
         }

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- Error 1-->
-<Hotels xmlns="http://www.hotel.com/hotel-schema"
+<Hotel xmlns="http://www.hotel.com/hotel-schema"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.hotel.com/hotel-schema https://raw.githubusercontent.com/amunroe1/CSE598-Munroe/main/Assignment_4/Hotels.xsd">
 	<Hotel Rating="4.2">

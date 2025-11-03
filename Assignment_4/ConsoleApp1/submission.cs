@@ -6,14 +6,14 @@ using System.Xml;
 
 namespace ConsoleApp1
 {
-    public class submission
+    public class Program
     {
         // These URLs will be read by the autograder,
         // please keep the variable name un-changed and link to the correct xml/xsdfiles.
         public static string xmlURL = "https://raw.githubusercontent.com/amunroe1/CSE598-Munroe/refs/heads/main/Assignment_4/Hotels.xml"; //Q1.2
         public static string xmlErrorURL = "https://raw.githubusercontent.com/amunroe1/CSE598-Munroe/refs/heads/main/Assignment_4/HotelsErrors.xml"; //Q1.3
         public static string xsdURL = "https://raw.githubusercontent.com/amunroe1/CSE598-Munroe/refs/heads/main/Assignment_4/Hotels.xsd"; //Q1.1
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             // Q3: You can pick two of three
             string result = Verification(xmlURL, xsdURL);
@@ -60,7 +60,7 @@ namespace ConsoleApp1
                     validationErrors.Add(ex.Message); ;
                 }
 
-              
+ 
                 if (validationErrors.Count > 0)
                 {
                     return "Validation Errors:\n" + string.Join("\n", validationErrors); ;
@@ -91,7 +91,17 @@ namespace ConsoleApp1
                 XmlDocument doc = new XmlDocument();
                 doc.LoadXml(xmlContent);
                 string jsonText = JsonConvert.SerializeXmlNode(doc);
-                return jsonText;
+                try
+                {                     // Test deserialization}
+
+                    JsonConvert.DeserializeXmlNode(jsonText);
+                    Console.WriteLine("Deserialization successful.");
+                }
+                catch (Exception ex)
+                {
+                    return $"Deserialization Error: {ex.Message}";
+                }
+                    return jsonText;
             }
             catch (Exception ex)
             {
